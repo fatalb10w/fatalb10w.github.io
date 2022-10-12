@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Сергей Шадрин: web-development</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
    <header>
@@ -23,140 +25,211 @@
    <div class="main"><div class="title_container">
        <h1>Привет! <br> Я Сергей Шадрин</h1>
        <h4>Фулл стек веб-разработчик</h4>
-       <input type="submit" value="О нас">
-        <input type="submit" value="Наши работы">
+       <input type="submit" value="Обо мне">
+        <input type="submit" value="Мои работы">
    </div>
     </div>
    
    <div class="about">
+          <div class="about_container">
            <h2>Обо мне</h2>
-           <image src="..." alt="Портрет не найден"></image>
-           <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam optio distinctio harum consequuntur veritatis adipisci laborum saepe blanditiis magni obcaecati. Consectetur repellendus, minima id libero unde doloremque perferendis sit voluptatem eveniet sunt, atque!</p>
-          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi autem, praesentium eligendi rerum repellat impedit asperiores voluptatum reiciendis beatae magnam neque dicta recusandae blanditiis molestiae maxime natus, ea saepe similique deleniti perspiciatis consequatur!</p>
+           <hr>
+           <img src="../src/img/port.png" alt="Портрет не найден">
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim illum a cumque sint obcaecati molestiae dolores, nostrum deleniti architecto mollitia quod excepturi perferendis aut voluptatum!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum odio harum dignissimos, laborum nisi numquam, voluptatem provident praesentium error ducimus cumque eius beatae corporis excepturi.</p>
           <input type="submit" value="Скачать резюме">
        </div>
+    </div>
        
        <div class="skills">
+          <div class="skills_container">
            <h2>Что я умею</h2>
-           <div class="web">
-              <image src="...", alt="Иконка отсутствует"></image> 
+           <hr>
+           <div class="skills_item">
+              <img src="../src/img/notebook.png", alt="Иконка отсутствует">
               <h4>Веб-дизайн</h4> 
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, sit ea. Rerum praesentium modi deleniti.</p>
            </div>
-           <div class="dev">
-               <image src="...", alt="Иконка отсутствует"></image>  
+           <div class="skills_item">
+               <img src="../src/img/sign.png", alt="Иконка отсутствует">  
                <h4>Разработка</h4>
                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, autem, iure. Voluptatum temporibus, autem minus.</p>
            </div>
-           <div class="ceo">
-               <image src="...", alt="Иконка отсутствует"></image>
+           <div class="skills_item">
+               <img src="../src/img/rocket.png", alt="Иконка отсутствует">
                <h4>CEO-оптимизация</h4>
                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum sint reiciendis veniam hic itaque error!</p>  
            </div>
-           <div class="mark">
-               <image src="...", alt="Иконка отсутствует"></image>
+           <div class="skills_item">
+               <img src="../src/img/voicephone.png", alt="Иконка отсутствует">
                <h4>Маркетинг</h4> 
                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non possimus tempora veritatis ipsam error nemo.</p> 
            </div>
+           <div class="clear">
+           </div>
+        </div>
        </div>
        
        <div class="cases">
+          <div class="cases_container">
            <h2>Кейсы</h2>
+           <hr>
            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta perspiciatis, sunt saepe!</p>
-           <image src="...", alt="Скриншот не найден"></image> 
+           <img src="../src/img/photo.jpg", alt="Скриншот не найден">
+         
+           <div class="case_item">
+               <h4>Client</h4>
+               <p>Какая-то компания</p>
+               <h4>Website</h4>
+               <p>http://www.somedomain.com</p>
+               <input type="submit" value="VISIT LIVE SITE">
+           </div>
+           <div class="case_item2">
+               <h4>Название проекта:</h4>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident non maxime, numquam eos veniam facilis sint accusantium deserunt distinctio rerum alias porro itaque doloremque modi voluptas ipsum explicabo repudiandae sed nulla vitae minus debitis dolores dolore doloribus et! Sint vero ipsum, eum expedita suscipit odio. Atque suscipit, nam quia eius! Dolores, magni.</p>
+           </div>
+        </div>
        </div>
        
        <div class="cal">
+          <div class="cal_container">
            <h2>Расчёт стоимости</h2>
            <form action="#">
            <h3>Тип сайта</h3>
-            <select name="type">
-            <option value="Opti1">Выберите пункт...</option>
+            <select class="select_item" name="select">
+            <option value="1" selected disabled>Выберите пункт...</option>
+            <option value="2">Сайт-визитка</option>
+            <option value="3">Корпоративный сайт</option>
+            <option value="4">Интернет-магазин</option>
             </select>
            <h3>Дизайн</h3>
-            <select name="dis">
-            <option value="Opti1">Выберите пункт...</option>
+            <select class="select_item" name="dis">
+            <option value="1" selected disabled>Выберите пункт...</option>
+            <option value="2">Шаблонный</option>
+            <option value="3">Уникальный</option>
+            <option value="4">Интернет-магазин</option>
             </select>
            <h3>Адаптивность</h3>
-            <select name="adapt">
-            <option value="Opti1">Выберите пункт...</option>
+            <select class="select_item" name="adapt">
+            <option value="1" selected disabled>Выберите пункт...</option>
+            <option value="2">Только ПК</option>
+            <option value="3">Только мобильный сайт</option>
+            <option value="4">ПК + Мобильный</option>
             </select>
-           <p>Сроки 0</p> 
-           <p>Cтоимость 0</p>
-           </form> 
+            <hr>
+            <div class="words">
+            <p class="marg27">Сроки</p> 
+            <p>Cтоимость</p> 
+            </div>
+            <div class="numbers">
+                <p class="marg27">0</p>
+                <p>0</p>
+            </div>
+         
+           </form>
+           </div> 
        </div>
        
        <div class="stat">
+          <div class="stat_container">
            <h2>Немного статистики</h2>
-           <div class="happy">
-              <image src="...", alt="Иконка отсутствует"></image> 
+           <hr>
+           <div class="stat_item">
+              <img src="../src/img/smile.png", alt="Иконка отсутствует"> 
               <h4>120</h4> 
               <p>Счастливых клиентов</p>
            </div>
-           <div class="work">
-               <image src="...", alt="Иконка отсутствует"></image>  
+           <div class="stat_item">
+               <img src="../src/img/hooks.png", alt="Иконка отсутствует"> 
                <h4>4.600</h4>
                <p>Часов работы</p>
            </div>
-           <div class="done">
-               <image src="...", alt="Иконка отсутствует"></image>
+           <div class="stat_item">
+               <img src="../src/img/jackdaw.png", alt="Иконка отсутствует">
                <h4>340</h4>
                <p>Проектов завершено</p>  
            </div>
-           <div class="reward">
-               <image src="...", alt="Иконка отсутствует"></image>
+           <div class="stat_item">
+               <img src="../src/img/reward.png", alt="Иконка отсутствует">>
                <h4>23</h4> 
                <p>Наград получено</p> 
            </div>
+        </div>
        </div>
        
         <div class="comments">
+          <div class="comments_container">
            <h2>Отзывы</h2>
-           <image src="..." alt="Портрет не найден"></image>
+           <hr>
+           <img src="../src/img/man.png" alt="Портрет не найден">
            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam optio distinctio harum consequuntur veritatis adipisci laborum saepe blanditiis magni obcaecati. Consectetur repellendus, minima id libero unde doloremque perferendis sit voluptatem eveniet sunt, atque!</p>
-          <p> Михаил, директор ПАО "Газпром".</p>
+              <p class="bol"> Михаил, </p> <p class="lin "> директор ПАО "Газпром".</p>
+          </div>
        </div>
        
       <div class="contacts">
+         <div class="contacts_container">
           <h2>Мои контакты </h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora tenetur dicta praesentium accusamus nulla, mollitia provident quidem et sit vero saepe non, eos, neque nesciunt? Iste fugit, perferendis delectus provident</p>
-          
-          <div class="adres">
-              <image src="...", alt="Иконка отсутствует"></image>
+          <hr>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ducimus vel, rem minus fuga dignissimos!</p>
+              <div class="all_cont">
+          <div class="contact_items">
+         
+                  <img src="../src/img/geo.png", alt="Иконка отсутствует">
               <p>Тольятти Дзержинского 15</p>
            </div>
-           <div class="mail">
-               <image src="...", alt="Иконка отсутствует"></image>  
+           <div class="contact_items">
+               <img src="../src/img/message.png", alt="Иконка отсутствует"> 
                <p>Deifordhaze@gmail.com</p>
            </div>
-           <div class="number">
-               <image src="...", alt="Иконка отсутствует"></image>
+           <div class="contact_items">
+               <img src="../src/img/phone.png", alt="Иконка отсутствует">
                <p>+7(913)771-13-11</p>  
             </div>
+        </div>
+            
+            <div class="clear2">
+                
+            </div>
+              
                <h3>Оставьте мне сообщение</h3>
                <form action="#">
-                   <input type="text" name="name" placeholder="Имя">
-                   <input type="text" name="email" placeholder="email">
-                   <textarea name="message" id="mes" cols="30" rows="10" placeholder="Сообщение"></textarea>
-                   
-                   <input type="submit" value="Отправить">
+                  <div class="one">
+                   <input type="text" name="name" placeholder="Имя"> 
+                   &nbsp; &nbsp; &nbsp;
+                   <input type="text" name="email" placeholder="email">                 </div>
+                   <div class="two">
+                    <textarea name="message" id="mes" cols="30" rows="10" placeholder="Сообщение"></textarea>    
+                   </div>
+                   <input class="button" type="submit" value="Отправить">
                </form>
-          <div class="facebook">
-              <a href="#"><image src="...", alt="Иконка отсутствует"></image></a>
+
+
+<!--
+          <div class="soc_item">
+              <a href="..."><img src="../src/img/fb.png", alt="Иконка отсутствует"></a>
           </div>
-          <div class="twitter">
-               <a href="#"><image src="...", alt="Иконка отсутствует"></image></a>
+          <div class="soc_item">
+               <a href="..."><img src="../src/img/twitter.png", alt="Иконка отсутствует"></a>
           </div>
-          <div class="instagram">
-               <a href="#"><image src="...", alt="Иконка отсутствует"></image></a>
+          <div class="soc_item">
+               <a href="..."><img src="../src/img/git.png", alt="Иконка отсутствует"></a>
           </div>
-          <div class="github">
-              <a href="#"><image src="...", alt="Иконка отсутствует"></image></a>
+          <div class="soc_item">
+              <a href="..."><img src="../src/img/inst.png", alt="Иконка отсутствует"></a>
           </div>
+-->
+        </div>
+
       </div> 
+
+      
+      <div class="clear3">
+          
+      </div>
       
         <div class="map">
-              <image src="...", alt="Изображение карты не найдено"></image>
+              <img src="../src/img/map.jpg", alt="Изображение карты не найдено">
         </div>
         
           <footer>
