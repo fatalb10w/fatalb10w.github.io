@@ -6,6 +6,10 @@ nav{
     width: 100%;
     height: 60px;
     background: #344051;
+    position: fixed;
+    left: 0;
+    top: 0;
+   
 }
 
 .logo{
@@ -20,6 +24,7 @@ nav{
     color: #fff;
     float: left;
     padding-left: 432px;
+    
 }
 
 .menu li{
@@ -47,6 +52,7 @@ nav{
 .title_container h1{
     font-size: 60px;
     font-weight: bold;
+    color: #2c384a;
 }
 
 .title_container h4{
@@ -73,7 +79,7 @@ nav{
     padding: 106px 0px 15px 0px;
     font-weight: bold;
     text-transform: uppercase;
-    
+    color: #2c384a;
 }
 
 .about_container hr{
@@ -92,7 +98,8 @@ nav{
 
 .about_container p{
     text-align: start;
-    margin-top: 30px; 
+    margin-top: 30px;
+    color: #263244;
     
 }
 
@@ -101,10 +108,10 @@ nav{
     height: 30px;
     width: 156px;
     text-align: center;
-    border: 3px solid #6f707e;
+    border: 2px solid #515a69;
     background: none;
     border-radius: 5px;
-    color: #6d7682;
+    color: #263244;
     font-size: 10px;
     padding-left: 20px;
     background: url(../img/download.png) 10% 50%/auto 50% no-repeat;
@@ -125,6 +132,7 @@ nav{
     padding: 106px 0px 15px 0px;
     font-weight: bold;
     text-transform: uppercase;
+    color: #263244;
 }
 
 .skills_container hr{
@@ -144,7 +152,7 @@ nav{
 }
 
 .skills{
-    background: url(../img/bg2.jpg) 100% 100%/auto 100% no-repeat;
+    background: url(../img/bg2.jpg)  100% 100%/auto 100% no-repeat;
 }
 
 .skills_item{
@@ -175,6 +183,7 @@ nav{
     padding: 106px 0px 15px 0px;
     font-weight: bold;
     text-transform: uppercase;
+    color: #263244;
 }
 
 .cases_container hr{
@@ -189,6 +198,7 @@ nav{
 .cases_container p{
     text-align: center;
     margin-bottom: 38px;
+    color: #263244;
 }
 
 .cases_container img{
@@ -222,12 +232,15 @@ nav{
     font-weight: bold;
     text-transform: uppercase;
     text-align: start;
+    color: #263244;
 }
 
 .case_item p{
     text-align: start;
     padding-top: 15px;
     font-size: 13px;
+    color: #263244;
+
     
 }
 .case_item input{
@@ -237,7 +250,7 @@ nav{
     border: none;
     background: none;
     border-radius: 5px;
-    color: #ffffff;
+    color: #fff;
     font-size: 15px;
     background-color: #63b5ae;
     margin-bottom: 98px;
@@ -250,12 +263,14 @@ nav{
     font-weight: bold;
     text-align: start;
     margin-bottom: 15px;
+    color: #263244;
 }
 
 .case_item2 p{
     font-size: 18px;
     text-align:start;
     line-height: 22px;
+    color: #263244;
 }
 
 .cal_container h2{
@@ -264,6 +279,7 @@ nav{
     padding: 0px 0px 61px 0px;
     font-weight: bold;
     text-transform: uppercase;
+    color: #263244;
 }
 
 .cal_container h3{
@@ -272,6 +288,7 @@ nav{
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 22px;
+    color: #263244;
 }
 
 .cal_container{
@@ -301,12 +318,14 @@ margin: -20px 0 30px 0;
     display: inline-block;
     float: left;
     width: 280px; 
+    color: #263244;
    
 }
 
 .numbers{
     width 800px;
     margin: 0 100%;
+    color: 263244;
 }
 
 .clear{
@@ -316,6 +335,7 @@ margin: -20px 0 30px 0;
 .cal_container p{
     font-size: 16px;
     font-weight: bold; 
+    color: #263244;
 
 }
 
@@ -364,14 +384,14 @@ margin: -20px 0 30px 0;
 
 .stat_item h4{
     
-    color: #1c2534;
+    color: #263244;
     font-size: 25px;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
 .stat_item p{
-    color: #1c2534;
+     color: #263244;
     font-size: 15px;
 }
 
@@ -381,7 +401,7 @@ margin: -20px 0 30px 0;
     padding: 106px 0px 15px 0px;
     font-weight: bold;
     text-transform: uppercase;
-    
+     color: #263244;
 }
 
 .comments_container hr{
@@ -401,6 +421,7 @@ margin: -20px 0 30px 0;
 .comments_container p{
     text-align: center;
     margin-top: 30px;
+     color: #263244;
     
 }
 
@@ -413,11 +434,13 @@ margin: -20px 0 30px 0;
 .bol{
     display: inline-block;
     font-weight: bold;
+    color: #263244;
 }
 
 .lin{
     display: inline-block;
     margin-bottom: 150px;
+     color: #263244;
 }
 
 .contacts_container h2{
@@ -441,6 +464,7 @@ margin: -20px 0 30px 0;
 .contacts_container>p{
     text-align: center;
     margin-bottom: 34px;
+    color: #fff;
 }
 
 
@@ -450,7 +474,7 @@ margin: -20px 0 30px 0;
 }
 
 .contacts_container{
-    width: 1870px;
+    width: 1850px;
     height: 839px;
     margin: 0 auto;
 }
@@ -462,7 +486,7 @@ margin: -20px 0 30px 0;
 }
 
 .all_cont{
-    margin-left: 585px;
+    margin-left: 580px;
 }
 
 .clear2{
@@ -528,10 +552,16 @@ margin: -20px 0 30px 0;
     text-align: center;
     margin: 0 auto;
 }
-*/
+*/  
 
 .clear3{
     clear: left;
+}
+
+.map img{
+    width: 1863px; 
+    height: 350px; 
+    margin: 0 auto;
 }
 
 footer{
