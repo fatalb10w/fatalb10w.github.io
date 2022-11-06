@@ -290,9 +290,7 @@ main{
     -o-animation: basenter 3s ease forwards;
     animation: basenter 3s ease forwards;
     opacity: 0;
-    
 }
-
 
 .clear{
     clear: left;
@@ -306,8 +304,7 @@ main{
     -o-animation: titlemove 1.5s ease forwards;
     animation: titlemove 1.5s ease forwards;
     opacity: 0;
-    transition-delay: 1s;
-    
+    animation-delay: 1s;
 }
 
 .skills_item img:hover{
@@ -332,7 +329,7 @@ main{
     -o-animation: basenter 3s ease forwards;
     animation: basenter 3s ease forwards;
     opacity: 0;
-    animation-delay: 1.4s;
+    animation-delay: 1.8s;
 }
 
 /*Кейсы*/
