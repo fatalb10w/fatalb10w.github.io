@@ -1,10 +1,13 @@
-/*ТЕЛО*/
+hr{
+    opacity: 1;
+}
+
 body{
     font-family: Arial, sans-serif;
 }
 
 
-/*Меню*/
+
 nav{
     width: 100%;
     height: 60px;
@@ -44,7 +47,6 @@ nav{
     opacity: 0;
 }
 
-/*Задержка перед падением*/
 .menu li:nth-child(2)
 {
     animation-delay: 0.4s
@@ -91,7 +93,6 @@ nav{
  color: #d17700;
 }
 
-/*Заглавная страница*/
 .main{
     width: 100%;
     height: 100%;
@@ -152,38 +153,37 @@ main{
     transform: scale(1.1);
 }
 
-/*Обо мне*/
+
 .about_container h2{
-    text-align: center;
     font-size: 22px;
     padding: 106px 0px 15px 0px;
     font-weight: bold;
     text-transform: uppercase;
     color: #2c384a;
-    /*animation*/
     -webkit-animation: topshift 1s ease forwards;
     -o-animation: topshift 1s ease forwards;
     animation: topshift 1s ease forwards;
     opacity: 0;
 }
 
+.about{
+    width: 100%;
+}
+
 .about_container hr{
     height: 4px;
     border: none;
+    background: #d17700;
     width: 80px;
     margin: 0 auto;
-    background: rgba(209, 119, 0, 1);
-    margin-bottom: 63px;
-    /*animation*/
-       -webkit-animation: hrcolor 1.5s ease forwards;
+    margin-bottom: 40px;
+     -webkit-animation: hrcolor 1.5s ease forwards;
     -o-animation: hrcolor 1.5s ease forwards;
     animation: hrcolor 1.5s ease forwards;
     
 }
 
-.about_container img{
-    display: block;
-    margin: 0 auto; 
+.about_container img{ 
     -webkit-animation: basenter 3s ease forwards;
     -o-animation: basenter 3s ease forwards;
     animation: basenter 3s ease forwards;
@@ -192,11 +192,9 @@ main{
     
 }
 
+
 .about_container p{
-    text-align: start;
-    margin-top: 30px;
     color: #263244;
-    /*animation*/
      -webkit-animation: basenter 3s ease forwards;
     -o-animation: basenter 3s ease forwards;
     animation: basenter 3s ease forwards;
@@ -204,7 +202,6 @@ main{
     animation-delay: 1.2s;
     
 }
-
 .about_container input{
     margin-top: 34px;
     height: 30px;
@@ -236,22 +233,16 @@ main{
     transform: scale(1.1);
 }
 
-.about_container{
-    text-align: center;
-    width: 740px;
-    margin: 0 auto;   
-    
+.skills{
+    background: url(../img/bg2.jpg)  center/cover no-repeat;
 }
 
-/*Навыки*/
 .skills_container h2{
-    text-align: center;
     font-size: 22px;
     padding: 106px 0px 15px 0px;
     font-weight: bold;
     text-transform: uppercase;
     color: #263244;
-    /*animation*/
      -webkit-animation: topshift 1s ease forwards;
     -o-animation: topshift 1s ease forwards;
     animation: topshift 1s ease forwards;
@@ -264,44 +255,30 @@ main{
     background: #d17700;
     width: 80px;
     margin: 0 auto;
-    margin-bottom: 63px;
-    /*animation*/
-        -webkit-animation: hrcolor 1.5s ease forwards;
+    margin-bottom: 40px;
+     -webkit-animation: hrcolor 1.5s ease forwards;
     -o-animation: hrcolor 1.5s ease forwards;
     animation: hrcolor 1.5s ease forwards;
 }
 
+}
+
 .skills_container{
-    width: 920px;
-    margin: 0 auto;
-    height: 517px;
-    
-    
+    margin: 0 auto;  
 }
 
-.skills{
-    background: url(../img/bg2.jpg)  100% 100%/auto 100% no-repeat;
-   
-}
-
-.skills_item{
-    float: left;
-    width: 230px;
+.skills_item {
     text-align: center;
     -webkit-animation: basenter 3s ease forwards;
     -o-animation: basenter 3s ease forwards;
     animation: basenter 3s ease forwards;
     opacity: 0;
-}
-
-.clear{
-    clear: left;
+    
 }
 
 .skills_item img{
-    margin-bottom: 41px;
+    margin-bottom: 20px;
     transform: scale(1);
-    /*animation*/
      -webkit-animation: titlemove 1.5s ease forwards;
     -o-animation: titlemove 1.5s ease forwards;
     animation: titlemove 1.5s ease forwards;
@@ -318,7 +295,6 @@ main{
     font-size: 17px;
     font-weight: bold;
     margin-bottom: 20px;
-    /*animation*/
      -webkit-animation: basenter 3s ease forwards;
     -o-animation: basenter 3s ease forwards;
     animation: basenter 3s ease forwards;
@@ -334,15 +310,13 @@ main{
     animation-delay: 1.8s;
 }
 
-/*Кейсы*/
+
 .cases_container h2{
-    text-align: center;
     font-size: 22px;
     padding: 106px 0px 15px 0px;
     font-weight: bold;
     text-transform: uppercase;
     color: #263244;
-    /*animation*/
     -webkit-animation: topshift 1s ease forwards;
     -o-animation: topshift 1s ease forwards;
     animation: topshift 1s ease forwards;
@@ -355,16 +329,12 @@ main{
     background: #d17700;
     width: 80px;
     margin: 0 auto;
-    margin-bottom: 40px;
-    /*animation*/
      -webkit-animation: hrcolor 1.5s ease forwards;
     -o-animation: hrcolor 1.5s ease forwards;
     animation: hrcolor 1.5s ease forwards;
 }
 
 .cases_container p{
-    text-align: center;
-    margin-bottom: 38px;
     color: #263244; 
      -webkit-animation: basenter 3s ease forwards;
     -o-animation: basenter 3s ease forwards;
@@ -385,11 +355,13 @@ main{
 
 .cases_container img{
     display: block;
-    margin: 0 auto;
-    margin-bottom: 45px;
-
+    margin: 0 auto; 
+  -webkit-animation: basenter 3s ease forwards;
+    -o-animation: basenter 3s ease forwards;
+    animation: basenter 3s ease forwards;
+    opacity: 0;
+    animation-delay: 1.2s;
 }
-
 .cases_container img:hover{
     border: solid 1px #d17700;
     border-radius: 10px;
@@ -397,15 +369,12 @@ main{
     }
 
 .cases_container{
-    width: 1100px;
     margin: 0px auto;
-    height: 1200px;
+
 }
 
 .case_item{
     display: inline-block;
-    float: left;
-    width: 280px; 
     -webkit-animation: basenter 3s ease forwards;
     -o-animation: basenter 3s ease forwards;
     animation: basenter 3s ease forwards;
@@ -415,7 +384,6 @@ main{
 }
 
 .case_item2{
-    width 800px;
     margin: 0px auto;
     -webkit-animation: basenter 3s ease forwards;
     -o-animation: basenter 3s ease forwards;
@@ -430,13 +398,11 @@ main{
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
-    text-align: start;
     color: #263244;
 }
 
 .case_item p{
     text-align: start;
-    padding-top: 15px;
     font-size: 13px;
     color: #263244;
 
@@ -452,7 +418,6 @@ main{
     color: #fff;
     font-size: 15px;
     background-color: #63b5ae;
-    margin-bottom: 98px;
     font-weight: bold;
     margin; 0 0 0 -40px;
 }
@@ -470,8 +435,6 @@ main{
 .case_item2 h4{
     font-size: 18px;
     font-weight: bold;
-    text-align: start;
-    margin-bottom: 15px;
     color: #263244;
 }
 
@@ -483,15 +446,23 @@ main{
     
 }
 
-/*Калькулятор стоимости*/
+.cal{
+    margin: 0 auto;
+    width: 974px;
+    border: 1px solid white;
+    -moz-box-shadow: 0 0 #777777;
+  -webkit-box-shadow: 0 0 #777777;
+  box-shadow: 0 0 10px #777777;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
 .cal_container h2{
-    text-align: center;
     font-size: 22px;
     padding: 0px 0px 61px 0px;
     font-weight: bold;
     text-transform: uppercase;
     color: #263244;
-    /*animation*/
      -webkit-animation: topshift 1s ease forwards;
     -o-animation: topshift 1s ease forwards;
     animation: topshift 1s ease forwards;
@@ -499,33 +470,30 @@ main{
 }
 
 .cal_container h3{
-    text-align: start;
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 22px;
     color: #263244;
-    /*animation*/
     -webkit-animation: titlemove 1.5s ease forwards;
     -o-animation: titlemove 1.5s ease forwards;
     animation: titlemove 1.5s ease forwards;
+   animation-delay: 1.4s;
     opacity: 0;
-}
-
-.cal_container{
-    width: 880px;
-    margin: 0 auto;
-    height: 734px;
+    margin: -20px 0 30px 0; 
 }
 
 .select_item{
-    width: 894px;
     height: 57px;
     background-color: #eee;
     margin-bottom: 50px;
     font-size: 14px;
     color: #909090;
-    padding-left: 24px;
+    -webkit-animation: basenter 3s ease forwards;
+    -o-animation: basenter 3s ease forwards;
+    animation: basenter 3s ease forwards;
+    opacity: 0;
+    animation-delay: 1.2s;
+
 }
 
 .select_item:hover{
@@ -534,7 +502,6 @@ main{
 
 .cal_container hr{
 border: 1px solid #d1d1d1; 
-width: 895px;
 margin: -20px 0 30px 0; 
  -webkit-animation: linelenght 3s ease forwards;
 -o-animation: linelenght 3s ease forwards;
@@ -544,9 +511,8 @@ animation: linelenght 3s ease forwards;
 .words{
     display: inline-block;
     float: left;
-    width: 280px; 
+
     color: #263244;
-    /*animation*/
     -webkit-animation: titlemove 1.5s ease forwards;
     -o-animation: titlemove 1.5s ease forwards;
     animation: titlemove 1.5s ease forwards;
@@ -555,20 +521,14 @@ animation: linelenght 3s ease forwards;
 }
 
 .numbers{
-    width 800px;
-    margin: 0 100%;
-    color: 263244;
-    /*animation*/
+    margin: 0 98%;
+    color: #263244;
      -webkit-animation: aboutfall 1.5s ease forwards;
     -o-animation: aboutfall 1.5s ease forwards;
     animation: aboutfall 1.5s ease forwards;
     opacity: 0;
     animation-delay: 1.4s;
     
-}
-
-.clear{
-    clear: left;
 }
 
 .cal_container p{
@@ -582,14 +542,42 @@ animation: linelenght 3s ease forwards;
     margin-bottom: 27px; 
 }
 
-/*Статистика*/
-.stat_container h2{
+.cal_container input{
+    margin-bottom: 40px;
+    height: 44px;
+    width: 180px;
     text-align: center;
+    border: none;
+    background: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    background-color: #63b5ae;
+    font-weight: bold;
+    margin; 0 0 0 -40px;
+      -webkit-animation: aboutfall 1.5s ease forwards;
+    -o-animation: aboutfall 1.5s ease forwards;
+    animation: aboutfall 1.5s ease forwards;
+    opacity: 0;
+    animation-delay: 1.6s;
+}
+
+.cal_container input:hover{
+    border: 3.5px solid white;
+    border-radius: 10px;
+}
+
+.cal_container input:active{
+    background-color: white;
+    color: #63b5ae;
+}
+
+
+.stat_container h2{
     font-size: 22px;
     padding: 106px 0px 15px 0px;
     font-weight: bold;
     text-transform: uppercase;
-    /*animation*/
     -webkit-animation: aboutfall 2s ease forwards;
     -o-animation: aboutfall 2s ease forwards;
     animation: aboutfall 2s ease forwards;
@@ -603,41 +591,34 @@ animation: linelenght 3s ease forwards;
     width: 80px;
     margin: 0 auto;
     margin-bottom: 100px;
-    /*animation*/
     -webkit-animation: hrcolor 1.5s ease forwards;
     -o-animation: hrcolor 1.5s ease forwards;
     animation: hrcolor 1.5s ease forwards;
 }
 
-.stat_container{
-    width: 920px;
-    margin: 0 auto;
-    height: 495px;
-    
-}
-
 .stat{
-    margin-top: -35px;
-    background: url(../img/stat.jpg) 100% 100%/auto 100% no-repeat;
+
+    background: url(../img/stat.jpg) center/cover no-repeat;
     background-attachment: fixed;
    
 }
 
 .stat_item{
-    float: left;
     width: 230px;
-    text-align: center;
 }
 
 .stat_item img{
     margin-bottom: 41px;
     transform: scale(1);
-    /*animation*/
     -webkit-animation: aboutfall 1s ease forwards;
     -o-animation: aboutfall 1s ease forwards;
     animation: aboutfall 1s ease forwards;
     opacity: 0;
-    animation-delay: 1s;
+
+}
+
+.stat_container{
+    max-width: 100%;
 }
 
 .stat_item img:hover{
@@ -649,35 +630,32 @@ animation: linelenght 3s ease forwards;
     font-size: 25px;
     font-weight: bold;
     margin-bottom: 20px;
-    /*animation*/
      -webkit-animation: basenter 3s ease forwards;
     -o-animation: basenter 3s ease forwards;
     animation: basenter 3s ease forwards;
     opacity: 0;
-    animation-delay: 1.4s;
+    animation-delay: 0.5s;
     
 }
 
 .stat_item p{
      color: #263244;
     font-size: 15px;
-    /*animation*/
      -webkit-animation: basenter 3s ease forwards;
     -o-animation: basenter 3s ease forwards;
     animation: basenter 3s ease forwards;
     opacity: 0;
-    animation-delay: 1.8s;
+    animation-delay: 0.7s;
+    margin-bottom: 100px;
 }
 
-/*Отзывы*/
 .comments_container h2{
-    text-align: center;
+
     font-size: 22px;
     padding: 106px 0px 15px 0px;
     font-weight: bold;
     text-transform: uppercase;
      color: #263244;
-    /*animation*/
     -webkit-animation: basenter 3s ease forwards;
     -o-animation: basenter 3s ease forwards;
     animation: basenter 3s ease forwards;
@@ -691,7 +669,6 @@ animation: linelenght 3s ease forwards;
     width: 80px;
     margin: 0 auto;
     margin-bottom: 60px;
-    /*animation*/
      -webkit-animation: hrcolor 1.5s ease forwards;
     -o-animation: hrcolor 1.5s ease forwards;
     animation: hrcolor 1.5s ease forwards;
@@ -700,7 +677,6 @@ animation: linelenght 3s ease forwards;
 .comments_container img{
     display: block;
     margin: 0 auto;
-    /*animation*/
      -webkit-animation: rotateimg 2s ease forwards;
     -o-animation: rotateimg 2s ease forwards;
     animation: rotateimg 2s ease forwards;
@@ -708,7 +684,6 @@ animation: linelenght 3s ease forwards;
     opacity: 0;
 }    
 .comments_container p{
-    text-align: center;
     margin-top: 30px;
      color: #263244;
      
@@ -722,17 +697,12 @@ animation: linelenght 3s ease forwards;
     animation-delay: 1.5s;
 }
 
-.comments_container {
-    text-align: center;
-    width: 500px;
-    margin: 0 auto;
-}
+
 
 .bol{
     display: inline-block;
     font-weight: bold;
     color: #263244;
-    /*animation*/
      -webkit-animation: basenter 3s ease forwards;
     -o-animation: basenter 3s ease forwards;
     animation: basenter 3s ease forwards;
@@ -744,7 +714,6 @@ animation: linelenght 3s ease forwards;
     display: inline-block;
     margin-bottom: 150px;
      color: #263244;
-    /*animation*/
      -webkit-animation: basenter 3s ease forwards;
     -o-animation: basenter 3s ease forwards;
     animation: basenter 3s ease forwards;
@@ -752,14 +721,11 @@ animation: linelenght 3s ease forwards;
     animation-delay: 2.5s;
 }
 
-/*Контакты*/
 .contacts_container h2{
-    text-align: center;
     font-size: 22px;
-    padding: 106px 0px 15px 0px;
+    padding: 106px 0px 10px 0px;
     font-weight: bold;
     text-transform: uppercase;
-    /*animation*/
     -webkit-animation: aboutfall 1s ease forwards;
     -o-animation: aboutfall 1s ease forwards;
     animation: aboutfall 1s ease forwards;
@@ -772,18 +738,13 @@ animation: linelenght 3s ease forwards;
     background: #d17700;
     width: 80px;
     margin: 0 auto;
-    margin-bottom: 34px;
-    /*animation*/
      -webkit-animation: hrcolor 1.5s ease forwards;
     -o-animation: hrcolor 1.5s ease forwards;
     animation: hrcolor 1.5s ease forwards;
 }
 
-.contacts_container>p{
-    text-align: center;
-    margin-bottom: 34px;
+.contacts_container<p{
     color: #fff;
-    /*animation*/
     -webkit-animation: basenter 3s ease forwards;
     -o-animation: basenter 3s ease forwards;
     animation: basenter 3s ease forwards;
@@ -793,35 +754,12 @@ animation: linelenght 3s ease forwards;
 }
 
 
-.contacts_container form{
-   text-align: center;
-    margin-top: 45px;  
-}
 
 .contacts_container{
-    width: 1850px;
-    height: 839px;
     margin: 0 auto;
-    
-}
-
-.contact_items {
-   float: left;
-    width: 240px;
-    text-align: center;
-    
-}
-
-.all_cont{
-    margin-left: 580px;
-}
-
-.clear2{
-    clear: left;
 }
 
 .contact_items img{
-    margin-bottom: 16px;
     -webkit-animation: basenter 3s ease forwards;
     -o-animation: basenter 3s ease forwards;
     animation: basenter 3s ease forwards;
@@ -856,8 +794,8 @@ animation: linelenght 3s ease forwards;
     background-color: #d2d6dc;
     padding-left: 13px;
     margin-bottom: 30px;
-    height: 95px;
-    width: 733px;
+    height: 100px;
+    width: 708px;
     padding-top: 15px;
     color: #707173;
     -webkit-animation: basenter 3s ease forwards;
@@ -895,14 +833,12 @@ animation: linelenght 3s ease forwards;
 }
 
 .contacts{
-    background: url(../img/bg3.jpg) 100% 100%/auto 100% no-repeat;
-    height: 810px;
+    background: url(../img/bg3.jpg) center/cover no-repeat;
     color: #fff;
+    height: 80%;
 }
 
 .contacts_container h3{
-    text-align: center;
-    margin-top: 45px;
     font-weight: bold;
     font-size: 20px;
         -webkit-animation: basenter 3s ease forwards;
@@ -911,31 +847,23 @@ animation: linelenght 3s ease forwards;
     opacity: 0;
     animation-delay: 4s;
 }
-  
-.clear3{
-    clear: left;
+
+.contacts_container h2{
+ padding-top: 100px;
 }
 
-/*Карты*/
-.map img{
-    width: 1863px; 
-    height: 350px; 
-    margin: 0 auto;
-}
-
-/*Подвал*/
 footer{
     width: 100%;
     height: 90px;
     background: #344051;
-    margin: 0 auto;
+
     text-align: center;
     padding-top: 42px;
     color: #fff;
 }
 
 footer p{
-     /*animation*/
+
     -webkit-animation: basenter 3s ease;
     -o-animation: basenter 3s ease;
     animation: basenter 3s ease;
@@ -946,7 +874,6 @@ footer p:hover{
     text-decoration: underline;
 }
 
-/*Появление ФИ в меню*/
 @keyframes coming{
     0%{
         opacity: 0;
@@ -957,7 +884,7 @@ footer p:hover{
     }
 }
 
-/*Падение пунктов меню*/
+
 @keyframes topshift{
     from{
         opacity: 0;
@@ -976,7 +903,7 @@ footer p:hover{
     }
     
     to{
-        width: 895px;
+        width: 100%;
     }
 }
 
@@ -999,7 +926,7 @@ footer p:hover{
 }
 
 
-/*Появление текста заглавной страницы*/
+
 @keyframes titlemove{
     from{
         opacity: 0;
@@ -1012,7 +939,7 @@ footer p:hover{
     }
 }
 
-/*Спуск заголовка*/
+
 @keyframes aboutfall{
     from{
         opacity: 0;
@@ -1026,7 +953,7 @@ footer p:hover{
 }
 
 
-/*Появление текста*/
+
 @keyframes basenter{
     from{
         opacity: 0;
@@ -1038,8 +965,6 @@ footer p:hover{
 }
 
 
-
-/*Смена цвета линиии в блоке*/
 @keyframes hrcolor{
     10%{
         background: rgba(209, 119, 0, 0.1);
@@ -1132,7 +1057,7 @@ footer p:hover{
     
 
       
-/*Смена стиля при разрешениие в 991 пиксель*/
+
 @media (max-width: 991px){
     .title_container, .title_container h1, .title_container h4, .title_container input{
         color: white;
@@ -1163,3 +1088,22 @@ footer p:hover{
 .white-btn:visited{
     color: white;
 }
+
+@media (max-width: 1000px){
+    .cal{
+        border: none;
+        box-shadow: none;
+        width: 100%;
+    }
+   
+    @media (max-width: 991px){
+        .contacts_container textarea{
+            width: 354px;
+        }
+        
+        .contacts{
+               height: 100%;
+    }
+    
+    
+    
