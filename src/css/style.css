@@ -3,7 +3,7 @@ hr{
 }
 
 body{
-    font-family: Arial, sans-serif;
+    font-family: "Franklin Ghotic Medium" Arial, sans-serif;
 }
 
 
@@ -778,7 +778,7 @@ animation: linelenght 3s ease forwards;
 
 .one input{
     height: 34px;
-    width: 354px;
+    width: 27.5%;
     background-color: #d2d6dc;
     padding-left: 13px;
     color: #707173;
@@ -795,7 +795,7 @@ animation: linelenght 3s ease forwards;
     padding-left: 13px;
     margin-bottom: 30px;
     height: 100px;
-    width: 708px;
+    width: 55%;
     padding-top: 15px;
     color: #707173;
     -webkit-animation: basenter 3s ease forwards;
@@ -1095,15 +1095,10 @@ footer p:hover{
         box-shadow: none;
         width: 100%;
     }
-   
-    @media (max-width: 991px){
-        .contacts_container textarea{
-            width: 354px;
-        }
+
         
         .contacts{
                height: 100%;
     }
     
-    
-    
+  
