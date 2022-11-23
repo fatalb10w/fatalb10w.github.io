@@ -836,7 +836,7 @@ animation: linelenght 3s ease forwards;
 .contacts{
     background: url(../img/bg3.jpg) center/cover no-repeat;
     color: #fff;
-    height: 80%;
+    height: 100%;
 }
 
 .contacts_container h3{
@@ -1090,6 +1090,7 @@ footer p:hover{
     color: white;
 }
 
+/*
 @media (max-width: 1000px){
     .cal{
         border: none;
@@ -1102,4 +1103,5 @@ footer p:hover{
                height: 100%;
     }
     
+*/
   
