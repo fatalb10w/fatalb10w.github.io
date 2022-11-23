@@ -774,6 +774,7 @@ animation: linelenght 3s ease forwards;
     animation: basenter 3s ease forwards;
     opacity: 0;
     animation-delay: 1.8s;
+    width: 100%;
 }
 
 .one input{
