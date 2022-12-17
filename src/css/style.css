@@ -72,6 +72,11 @@ nav{
     animation-delay: 2s
 }
 
+.menu li:nth-child(7)
+{
+    animation-delay: 2.4s
+}
+
 .menu li a{
     transition: all 0.1s;
     color: #fff;
@@ -91,6 +96,10 @@ nav{
 
 .menu li a:hover{
  color: #d17700;
+}
+
+.menu li a:active{
+    color: red;
 }
 
 .main{
@@ -446,9 +455,9 @@ main{
     
 }
 
-.cal{
+.cal_container{
     margin: 0 auto;
-    width: 974px;
+    width: 60%;
     border: 1px solid white;
     -moz-box-shadow: 0 0 #777777;
   -webkit-box-shadow: 0 0 #777777;
@@ -493,6 +502,7 @@ main{
     animation: basenter 3s ease forwards;
     opacity: 0;
     animation-delay: 1.2s;
+    
 
 }
 
@@ -630,11 +640,6 @@ animation: linelenght 3s ease forwards;
     font-size: 25px;
     font-weight: bold;
     margin-bottom: 20px;
-     -webkit-animation: basenter 3s ease forwards;
-    -o-animation: basenter 3s ease forwards;
-    animation: basenter 3s ease forwards;
-    opacity: 0;
-    animation-delay: 0.5s;
     
 }
 
@@ -712,7 +717,7 @@ animation: linelenght 3s ease forwards;
 
 .lin{
     display: inline-block;
-    margin-bottom: 150px;
+    margin-bottom: 40px;
      color: #263244;
      -webkit-animation: basenter 3s ease forwards;
     -o-animation: basenter 3s ease forwards;
@@ -927,7 +932,6 @@ footer p:hover{
 }
 
 
-
 @keyframes titlemove{
     from{
         opacity: 0;
@@ -1090,18 +1094,96 @@ footer p:hover{
     color: white;
 }
 
-/*
-@media (max-width: 1000px){
-    .cal{
-        border: none;
-        box-shadow: none;
-        width: 100%;
-    }
+.preloader {
+  /*фиксированное позиционирование*/
+  position: fixed;
+  /* координаты положения */
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* фоновый цвет элемента */
+  background: #e0e0e0;
+  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+  z-index: 1001;
+}
 
-        
-        .contacts{
-               height: 100%;
-    }
-    
-*/
-  
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background-color: #337ab7;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-bounce {
+
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
+.carousel-control-next, .carousel-control-prev {
+	height: 70%;
+}
+
+#carouselReview .carousel-indicators{
+    margin-bottom: -10px;
+}
+
+#carouselReview .carousel-indicators [data-bs-target]{
+    background-color: #ff6c00;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+   background-color: #ff6c00; 
+}
+
+li .active{
+    color: #fa8b28 !important;
+}
+
+.space{
+    margin-bottom: 100px;
+}
