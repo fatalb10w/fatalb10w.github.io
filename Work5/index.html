@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Work5</title>
+</head>
+
+<body>
+
+
+    <!-- Модальное окно -->
+    <div class="modal fade" id="modal" tabindex="-1" data-bs-backdrop="static"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="container-fluid top">
+                    <div class="row">
+                        <div class="col-11">
+                            <h1 class="modal-title">
+                                Создать магазин
+                            </h1>
+                        </div>
+
+                        <div class="col-1">
+                            <div class="close-cross" data-bs-dismiss="modal"><img src="img/close.svg" class="close-btn"
+                                    alt="Крест"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="sample">
+                                    <label for="sample" class="label">Шаблон</label>
+                                    <select class="form-select select-sample select" id="sample"
+                                        aria-label="Стандартный">
+                                        <option value="Standart" selected>Стандартный</option>
+                                        <option value="Multiple">Многострачник</option>
+                                        <option value="Store">Магазин</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-5 offset-2">
+                                <div class="min-offset">
+                                    <label for="color" class="label"> Цветовая схема </label>
+                                    <select class="form-select select-color select" id="color"
+                                        aria-label="Классическая">
+                                        <option value="classic" selected>Классическая</option>
+                                        <option value="rgb">RGB</option>
+                                        <option value="rgba">RGBA</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gy-2">
+                            <div class="domen">
+                                <div class="col-12">
+                                    <label for="domen" class="label">
+                                        Домен
+                                    </label>
+                                    <div class="input-group mb-2">
+                                        <input id="domen" type="text" class="form-control form-domen"
+                                            placeholder="Например: ivangrozni" aria-label="Доменное имя"
+                                            aria-describedby="basic-addon2">
+                                        <span class="input-group-text domen" id="basic-addon2">
+                                            <div class="color">.work5.ru</div>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gy-2">
+                            <div class="col-12">
+                                <p class="pre">
+                                    В названии домена разрешены латиница и “-”, запрещается
+                                    использовать словосочетание Work 5. После создания магазина
+                                    Вы сможете прикрутить свой домен (например ivangrozniy.ru). Подробнее по <a href="#"
+                                        class="pre-link">ссылке</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row gy-2 p-2">
+                            <div class="col-12">
+                                <div class="btn-container">
+                                    <button type="button" class="close btn" data-bs-dismiss="modal">Отмена</button>
+                                    <button type="button" class="create btn">Создать</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-2">
+                <aside class="aside-block">
+                    <nav>
+                        <img src="img/logo.svg" alt="Логотип Work5" class="logo">
+                        <ul class="aside__block__list list-reset">
+                            <li class="aside__block__list__item home">
+                                <a href="#" class="aside-block-list-link">Главная</a>
+                            </li>
+                            <li class="aside__block__list__item">
+                                <a href="#" class="aside-block-list-link link--active cart"><span
+                                        class="border--active"></span>Мои магазины</a>
+                            </li>
+                            <li class="aside__block__list__item promo">
+                                <a href="#">Промоматериалы</a>
+                            </li>
+                            <li class="aside__block__list__item stat">
+                                <a href="#">Статистика</a>
+                            </li>
+                            <li class="aside__block__list__item wallet">
+                                <a href="#">Баланс</a>
+                            </li>
+                            <li class="aside__block__list__item personal">
+                                <a href="#">Персональные данные</a>
+                            </li>
+                            <li class="aside__block__list__item question">
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li class="aside__block__list__item support">
+                                <a href="#">Техподдержка</a>
+                            </li>
+                            <li class="aside__block__list__item exit">
+                                <a href="#">Выход</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-10">
+                <header>
+                    <div class="profile-items flex">
+                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="page-marker">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Библиотека</li>
+                            </ol>
+                        </nav>
+
+                        <div class="message-profile flex">
+                            <img src="img/message.svg" alt="Сообщения" class="message">
+                            <ul class="profile__list list-reset flex">
+                                <li class="profile__list__item">
+                                    <img src="img/man.svg" alt="Фотография профиля" class="man-photo">
+                                </li>
+                                <li class="profile__list__item name">
+                                    Максим Добжанский
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+                <button class="shop-create-btn btn-reset btn" data-bs-toggle="modal" data-bs-target="#modal"> <b
+                        class="plus">+</b> Создать свой магазин</button>
+                <h2 class="csh_title">Управление магазинами</h2>
+                <table class="table">
+                    <thead class="thead">
+                        <tr class="table-row">
+                            <th class="col">
+                                №
+                            </th>
+                            <th class="table-head">
+                                Название
+                            </th>
+                            <th class="table-head">
+                                Адрес
+                            </th>
+                            <th class="table-head">
+                                Действие
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        <tr class="table-row">
+                            <td class="table-column">
+                                12345
+                            </td>
+                            <td class="table-column">
+                                Дипломная работа
+                            </td>
+                            <td class="table-column">
+                                http://www.work5.ru/services
+                            </td>
+                            <td class="table-column">
+                                <button class="btn edit">
+                                    Редактировать
+                                </button>
+                                <button class=" btn not-edit">
+                                    Редактировать
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="table-column">
+                                12345
+                            </td>
+                            <td class="table-column">
+                                Дипломная работа
+                            </td>
+                            <td class="table-column">
+                                http://www.work5.ru/services
+                            </td>
+                            <td class="table-column">
+                                <button class="btn edit">
+                                    Редактировать
+                                </button>
+                                <button class="btn not-edit">
+                                    Редактировать
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
